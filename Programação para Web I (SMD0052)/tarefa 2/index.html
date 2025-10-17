@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" type="text/javascript"></script>
+    <title>Atividade</title>
+</head>
+<body>  
+    <!-- -----------------------  Questão 1  ------------------- -->
+    <h1>Questão 1</h1>
+    <form action="#" onsubmit="return validarCampoObrigatorio('texto')">
+        texto: <input type="text" id="texto"> 
+        <br>
+        <input type="submit" value="Enviar"> 
+    </form>
+    <hr/>
+    <!-- -----------------------  Questão 2   ------------------- -->
+    <h1>Questão 2</h1>
+    <form action="#" onsubmit="return validarStringPorTamanho('texto1')">
+        texto: <input type="text" id="texto1"> 
+        <br>
+        <input type="submit" value="Enviar"> 
+    </form>
+    <hr/>
+    <!-- -----------------------  Questão 3   ------------------- -->
+    <h1>Questão 3</h1>
+    <form action="#" onsubmit="return verificarSeTemInteiro('texto2')">
+        texto: <input type="text" id="texto2"> 
+        <br>
+        <input type="submit" value="Enviar"> 
+    </form>
+    <hr/>
+    <!-- -----------------------  Questão 4   ------------------- -->
+    <h1>Questão 4</h1>
+    <form action="#" onsubmit="return verificaSeEstaSelecionado('texto3')">
+        <select name="Comobox" id="texto3">
+            <option value=" "> -- selecione --</option>
+            <option value="Selecionado">Selecionado</option>
+        </select>
+    <br>
+    <input type="submit" value="Enviar">
+    </form>
+    <hr/>
+   <!-- -----------------------   Questão 5  ------------------- -->
+    <h1>Questão 5</h1>
+    <form action="#" onsubmit="return varificaSeCheckboxEstaSelecionado('texto4')">
+        checkbox: <input type="checkbox" id="texto4"> 
+        <br>
+        <input type="submit" value="Enviar"> 
+    </form>
+    <hr/>
+    <!-- -----------------------   Questão 6  ------------------- -->
+    <h1>Questão 6</h1>
+    <form action="#" >
+        opcao 1: <input type="checkbox" id="checkbox1"><br>
+        opcao 2: <input type="checkbox" id="checkbox2"><br>
+        opcao 3: <input type="checkbox" id="checkbox3"><br>
+        opcao 4: <input type="checkbox" id="checkbox4"><br> 
+        <br>
+        <input type="submit" value="Contar Selecionados" onclick="somaCheckboxSelecionados()"> 
+    </form>
+    <hr/>
+    <!-- -----------------------   Questão 7  ------------------- -->
+    <h1>Questão 7</h1>
+    <form action="#" >
+        opcao 1: <input type="radio" id="checkbox1"><br>
+        opcao 2: <input type="radio" id="checkbox2"><br>
+        opcao 3: <input type="radio" id="checkbox3"><br>
+        opcao 4: <input type="radio" id="checkbox4"><br> 
+        <br>
+        <input type="submit" value="Contar Selecionados" onclick="somaRadionsSelecionados()"> 
+    </form>
+    <hr/>
+    <!-- -----------------------   Questão 8  ------------------- -->
+    <h1>Questão 8</h1>
+    <form action="#" onsubmit="return validarCredenciais('nome','login','senha')">
+        Nome: <input type="text" id="nome"><br>
+        Login: <input type="text" id="login"><br>
+        Senha: <input type="password" id="senha"><br>
+        <br>
+        <input type="submit" value="Enviar"> 
+    </form>
+    <hr/>
+</body>
+</html>
