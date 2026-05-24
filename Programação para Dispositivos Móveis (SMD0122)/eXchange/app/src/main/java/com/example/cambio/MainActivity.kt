@@ -73,31 +73,31 @@ fun CurrencyConverterApp() {
             )
 
             Spacer(modifier = Modifier.height(16.dp))
-                // Campo para inserção do valor
-                var inputValue by remember { mutableStateOf("") }
-                BasicTextField(
-                    value = inputValue,
-                    onValueChange = { inputValue = it },
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(15.dp),
-                    singleLine = true,
-                    decorationBox = { innerTextField ->
-                        Box(
-                            modifier = Modifier
-                                .fillMaxWidth()
-                                .padding(8.dp)
-                                .background(Color.LightGray),
-                            contentAlignment = Alignment.CenterStart
-                        ) {
-                            if (inputValue.isEmpty()) Text(
-                                stringResource(id = R.string.enter_value_hint),
-                                color = Color.Gray
-                            )
-                            innerTextField()
-                        }
+            // Campo para inserção do valor
+            var inputValue by remember { mutableStateOf("") }
+            BasicTextField(
+                value = inputValue,
+                onValueChange = { inputValue = it },
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(15.dp),
+                singleLine = true,
+                decorationBox = { innerTextField ->
+                    Box(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(8.dp)
+                            .background(Color.LightGray),
+                        contentAlignment = Alignment.CenterStart
+                    ) {
+                        if (inputValue.isEmpty()) Text(
+                            text = stringResource(id = R.string.enter_value_hint),
+                            color = Color(0xFF555555) // 🟢 Alterado aqui! Um cinza escuro com alto contraste.
+                        )
+                        innerTextField()
                     }
-               )
+                }
+            )
 
             Spacer(modifier = Modifier.height(16.dp))
 
